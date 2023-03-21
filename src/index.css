@@ -5,9 +5,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background-color: #242424;
+  color: #f5f5f5;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+.spin::before {
+  animation: 1.5s linear infinite spinner;
+  animation-play-state: inherit;
+  border: solid 5px #cfd0d1;
+  border-bottom-color: #4EE1AD;
+  border-radius: 50%;
+  content: "";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
 }
