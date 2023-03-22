@@ -14,4 +14,9 @@ export const Wraper=styled.div`
     display: flex;
     flex-direction: column;
 `
-
+export const RowWraper=styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+`

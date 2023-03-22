@@ -10,9 +10,16 @@ export const StyledInputBox=styled.div`
 export const StyledInput=styled.input`
     background: transparent;
     outline: transparent;
-    border: 2px solid #D9D9D9;
+    border: 2px dashed #D9D9D9;
     padding: 5px;
     font-size: 1.25rem;
     color: #f5f5f5;
     
+`
+
+export const StyledButton=styled.button`
+    background: transparent;
+    outline: transparent;
+    border: transparent;
+    cursor: pointer;
 `
