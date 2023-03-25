@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ReactCriptoApiP/static/css/main.c2e4291f.css",
+    "main.js": "/ReactCriptoApiP/static/js/main.320b1fd4.js",
+    "index.html": "/ReactCriptoApiP/index.html",
+    "main.c2e4291f.css.map": "/ReactCriptoApiP/static/css/main.c2e4291f.css.map",
+    "main.320b1fd4.js.map": "/ReactCriptoApiP/static/js/main.320b1fd4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2e4291f.css",
+    "static/js/main.320b1fd4.js"
+  ]
+}
