@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ReactCriptoApiP/static/css/main.c2e4291f.css",
-    "main.js": "/ReactCriptoApiP/static/js/main.2546f1ec.js",
-    "index.html": "/ReactCriptoApiP/index.html",
-    "main.c2e4291f.css.map": "/ReactCriptoApiP/static/css/main.c2e4291f.css.map",
-    "main.2546f1ec.js.map": "/ReactCriptoApiP/static/js/main.2546f1ec.js.map"
+    "main.css": "/static/css/main.c2e4291f.css",
+    "main.js": "/static/js/main.354c3f58.js",
+    "index.html": "/index.html",
+    "main.c2e4291f.css.map": "/static/css/main.c2e4291f.css.map",
+    "main.354c3f58.js.map": "/static/js/main.354c3f58.js.map"
   },
   "entrypoints": [
     "static/css/main.c2e4291f.css",
-    "static/js/main.2546f1ec.js"
+    "static/js/main.354c3f58.js"
   ]
 }
