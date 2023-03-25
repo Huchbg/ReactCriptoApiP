@@ -38,3 +38,23 @@ code {
   transform: translate3d(-50%, -50%, 0);
   will-change: transform;
 }
+
+::-webkit-scrollbar{
+  width: 10px;
+ 
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+  
+  margin: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #4EE1AD;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #38bb8d
+}

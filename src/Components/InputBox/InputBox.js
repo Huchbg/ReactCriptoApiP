@@ -1,14 +1,23 @@
-import { StyledInputBox,StyledInput,StyledButton } from"./elements"
+import { StyledInputBox, StyledInput, StyledButton } from "./elements"
 import MyImage from "imgs/refresh.png"
 
-export const InputBox=({SetInputText })=>{
-    return (
+export const InputBox = ({ SetInputText }) => {
+  return (
     <StyledInputBox>
-        <StyledInput type="text"  placeholder="Search.." onChange={(event)=>{
-            
-            SetInputText(event.target.value.toLocaleLowerCase())
-            }}/>
-        <StyledButton><img src={MyImage} alt="img" /></StyledButton>
+      <StyledInput
+        type="text"
+        placeholder="Search.."
+        onChange={(event) => {
+          SetInputText(event.target.value.toLocaleLowerCase())
+        }}
+      />
+      <StyledButton
+        onClick={() => {
+          window.location.reload()
+        }}
+      >
+        <img src={MyImage} alt="img" />
+      </StyledButton>
     </StyledInputBox>
-    )
+  )
 }

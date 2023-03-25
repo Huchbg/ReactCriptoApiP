@@ -1,23 +1,24 @@
 //import  styled  from "styled-components"
-import { BrowserRouter as Router ,Routes,Route,} from "react-router-dom";
-import { Home } from "./Pages/Home";
-import { Coin } from "./Pages/Coin";
+import { Routes, Route, useLocation } from "react-router-dom"
+import { Home } from "./Pages/Home"
+import { Coin } from "./Pages/Coin"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import { AnimatePresence } from "framer-motion"
 
 function App() {
-  const client =new QueryClient()
+  const location = useLocation()
+
+  const client = new QueryClient()
   return (
     <QueryClientProvider client={client}>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/coin/:id" element={<Coin />}/>
+      <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/coin/:id" element={<Coin />} />
         </Routes>
-      </Router>
+      </AnimatePresence>
     </QueryClientProvider>
-  );
+  )
 }
 
-
-
-export default App;
+export default App
