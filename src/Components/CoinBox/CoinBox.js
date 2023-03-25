@@ -6,7 +6,6 @@ import {
   CoinImage,
   ImageDiv,
 } from "./elements"
-import { useEffect } from "react"
 
 export const CoinBox = (props) => {
   return (
