@@ -1,7 +1,5 @@
-//https://api.coingecko.com/api/v3/coins/{id}
-import { useEffect, useState } from "react"
 import { Loader, StyledLink } from "../Components/elements"
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { useFetch } from "CustomHooks/useFetch"
 import { CoinBox } from "Components/CoinBox/CoinBox"
 import { motion } from "framer-motion"
@@ -27,7 +25,7 @@ export const Coin = () => {
       animate={{ height: "100vh" }}
       exit={{ y: -window.innerHeight, transition: { duration: 0.7 } }}
     >
-      <StyledLink to="/">Back</StyledLink>
+      <StyledLink to="/ReactCriptoApiP">Back</StyledLink>
       <CoinBox
         name={data.name}
         symbol={data.symbol}
