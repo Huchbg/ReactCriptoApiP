@@ -15,6 +15,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/coin/:id" element={<Coin />} />
+          <Route path="*" component={<div>NotFound</div>} />
         </Routes>
       </AnimatePresence>
     </QueryClientProvider>
